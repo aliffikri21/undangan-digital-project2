@@ -24,3 +24,10 @@ Dibuat menggunakan **HTML, CSS, dan JavaScript**, proyek ini menghadirkan pengal
 git clone https://github.com/aliffikri21/undangan-digital-project2.git
 
 # Buka index.html di browser favorit Anda
+
+```
+
+---
+
+## 📍 Live Preview
+[Web Deployment](https://aliffikri21.github.io/undangan-digital-project2/)
