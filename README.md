@@ -1,41 +1,26 @@
-Sebuah proyek undangan digital modern yang dibuat dengan HTML, CSS, dan JavaScript. Undangan ini dirancang dengan tampilan elegan dan interaktif untuk berbagai acara spesial seperti pernikahan, khitanan, atau ulang tahun.
+# 💌 Undangan Digital Project 2
 
-Fitur Utama
-✨ Tampilan Responsif - Dapat diakses dengan baik di berbagai perangkat
-🎵 Musik Latar - Dilengkapi dengan pemutar musik otomatis
-📅 Hitungan Mundur - Menampilkan countdown sampai hari acara
-📍 Google Maps Embed - Memudahkan tamu menemukan lokasi acara
-📸 Galeri Foto - Menampilkan momen-momen spesial
-💌 RSVP Digital - Kemudahan konfirmasi kehadiran secara online
+**Undangan Digital Project 2** adalah template undangan acara digital yang elegan dan interaktif, cocok untuk pernikahan, ulang tahun, khitanan, atau acara spesial lainnya.
 
-Cara Menggunakan
-Clone repositori ini:
+Dibuat menggunakan **HTML, CSS, dan JavaScript**, proyek ini menghadirkan pengalaman undangan modern yang bisa diakses dari mana saja.
 
-bash
+---
+
+## ✨ Fitur Unggulan
+
+- 📱 **Desain Responsif** — Tampil cantik di desktop maupun mobile.
+- 🎵 **Musik Latar** — Musik otomatis yang menciptakan suasana.
+- ⏳ **Hitung Mundur Acara** — Countdown menuju hari-H.
+- 🗺️ **Lokasi Google Maps** — Tampilkan lokasi acara langsung di undangan.
+- 🖼️ **Galeri Foto** — Dokumentasi visual kenangan spesial.
+- ✅ **Form RSVP Digital** — Konfirmasi kehadiran langsung online.
+
+---
+
+## 🚀 Cara Menjalankan
+
+```bash
+# Clone repositori
 git clone https://github.com/aliffikri21/undangan-digital-project2.git
-Buka file index.html di browser favorit Anda
 
-Atau akses langsung melalui GitHub Pages:
-Live Demo
-
-Customisasi
-Anda dapat dengan mudah menyesuaikan undangan ini dengan kebutuhan Anda:
-
-Ganti teks dan foto di file index.html
-
-Ubah warna dan gaya di file style.css
-
-Sesuaikan musik dengan mengubah file audio di folder assets
-
-Atur tanggal acara di script countdown
-
-Teknologi Yang Digunakan
-HTML5
-
-CSS3
-
-JavaScript (Vanilla)
-
-Font Awesome untuk ikon
-
-Google Fonts untuk tipografi
+# Buka index.html di browser favorit Anda
