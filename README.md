@@ -31,3 +31,7 @@ git clone https://github.com/aliffikri21/undangan-digital-project2.git
 
 ## 📍 Live Preview
 [Web Deployment](https://aliffikri21.github.io/undangan-digital-project2/)
+
+---
+
+<div align="center"> <sub>Dibuat dengan ❤️ oleh <a href="https://github.com/aliffikri21">Alif Fikri</a></sub> <br> <a href="https://github.com/aliffikri21/undangan-digital-project2/stargazers"> <img src="https://img.shields.io/github/stars/aliffikri21/undangan-digital-project2?style=social" alt="Stars"> </a> <a href="https://github.com/aliffikri21/undangan-digital-project2/network/members"> <img src="https://img.shields.io/github/forks/aliffikri21/undangan-digital-project2?style=social" alt="Forks"> </a> </div> ```
