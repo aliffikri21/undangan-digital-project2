@@ -37,9 +37,9 @@ html {
 
 }
 
-.simply-countdown > .simply-section .simply-amount {
+/* .simply-countdown > .simply-section .simply-amount {
     font-size: 2rem;
-}
+} */
 
 .hero.colored::before {
   filter: grayscale(0);
@@ -85,6 +85,9 @@ html {
 .simply-countdown > .simply-section {
     font-weight: 500;
     font-family: 'Work Sans', regular;
+    width: 100px;
+    height: 100px;
+    padding: 4.5rem;
 }
 
 /* Navbar Section */
@@ -212,6 +215,7 @@ html {
     background: url(img/info-bg-bw.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     padding-top: 10rem;
     padding-bottom: 8rem;
@@ -560,8 +564,13 @@ footer li {
     html {
         font-size: 75%;
     }
+    /* .simply-countdown > .simply-section {
+        padding: 80px;
+    } */
     .simply-countdown > .simply-section {
-        padding: 60px;
+    width: 120px;
+    height: 120px;
+    padding: 4rem;
     }
 }
 
@@ -611,6 +620,12 @@ footer li {
         padding: 60px;
         margin: 5px;
     }
+    .simply-countdown > .simply-section .simply-amount {
+        font-size: 2.5rem;
+    }
+    .simply-countdown > .simply-section .simply-word {
+        font-size: 1rem;
+    }
     .mynavbar .nav-link {
         font-size: 1.5rem;
         text-align: center;
@@ -619,8 +634,8 @@ footer li {
         overflow: hidden;
     }
     .timeline li .timeline-image {
-        width: 140px;
-        height: 140px;
+        width: 120px;
+        height: 120px;
     }
     .parallax-bunga.left {
         width: 180px;
@@ -645,7 +660,7 @@ footer li {
         right: 7.5rem;
     }
     .info {
-        background-size: cover;
+        background-size: fill !important;
     }
 }
 
@@ -658,9 +673,21 @@ footer li {
         font-size: 5rem;
         font-weight: 500;
     }
+    .simply-countdown {
+        gap: 2px;
+    }
     .simply-countdown > .simply-section {
-        padding: 40px;
+        padding: 20px;
         margin: 3px;
+        width: 80px;
+        height: 80px;
+        gap: 2px !important;
+    }
+    .simply-countdown > .simply-section .simply-amount {
+        font-size: 2rem;
+    }
+    .simply-countdown > .simply-section .simply-word {
+        font-size: 1rem;
     }
     .timeline li .timeline-image {
         width: 100px;
@@ -709,7 +736,7 @@ footer li {
         font-size: 60%;
     }
     .simply-countdown > .simply-section {
-        padding: 40px;
+        padding: 30px;
         margin: 3px;
     }
     .timeline li .timeline-image {
@@ -769,6 +796,11 @@ footer li {
     .row {
         padding-bottom: 1rem;
     }
+    .home .couple img {
+        align-items: center;
+        position: relative;
+        top: 20%;
+    }
     .home .couple h3 {
         font-size: 3rem;
         flex-wrap: nowrap;
@@ -780,15 +812,26 @@ footer li {
     html {
         font-size: 55%;
     }
+    .simply-countdown {
+        gap: 1px;
+    }
     .simply-countdown > .simply-section {
-        padding: 25px;
+        padding: 30px;
         margin: 3px;
         line-height: 13px;
         font-size: 1rem;
         font-weight: 400;
+        width: 60px;
+        height: 60px;
     }
     .simply-amount {
         margin: 0 1px;
+    }
+    .simply-countdown > .simply-section .simply-word {
+        font-size: 1rem;
+    }
+    .simply-countdown > .simply-section .simply-amount {
+        font-size: 1.9rem;
     }
     .timeline li .timeline-panel {
         width: 50%;

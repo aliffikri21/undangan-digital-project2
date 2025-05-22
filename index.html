@@ -18,8 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- simplyCountdown -->
-    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css">
-    <script src="countdown/simplyCountdown.min.js"></script>
+    <link rel="stylesheet" href="/simplyCountdown/dist/themes/default.css">
+    <script src="/simplyCountdown/dist/simplyCountdown.umd.js"></script>
 
     <!-- Icon Pack Bootstrap  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -93,9 +93,8 @@
             <div class="row">
               <div class="col-8 text-end">
                 <h3>Tri Ade Putra</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  A commodi adipisci, itaque autem voluptatibus sunt!</p>
-                  <p>Putra dari Bpk. Lorem <br> dan <br> Ibu Ipsum</p>
+                <p>Dengan izin Allah SWT, ia tumbuh sebagai pribadi yang bertanggung jawab dan penuh kasih. Kini, atas ridha-Nya, ia siap memimpin rumah tangga yang sakinah, mawaddah, wa rahmah.</p>
+                  <p>Putra dari Bpk. Marthen Bunga (Purn. TNI AD) <br> dan <br> Ibu Husmiati Buluan</p>
               </div>
               <div class="col-4">
                 <img src="img/kkade.JPG" alt="Alif Fikri Haykal" class="img-responsive rounded-circle">
@@ -112,9 +111,8 @@
               </div>
               <div class="col-8">
                 <h3>Aldhea Mutiara Insany</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  A commodi adipisci, itaque autem voluptatibus sunt!</p>
-                <p>Putra dari Bpk. Ipsum <br> dan <br> Ibu Lorem</p>
+                <p>InsyaAllah menjadi istri yang salehah dan penyejuk hati. Dengan niat ibadah, ia siap mendampingi sang imam dalam membangun keluarga yang diridhai Allah SWT.</p>
+                <p>Putra dari Bpk. Burhanuddin R. Bunga <br> dan <br> Ibu Almh. Ramlah Kamaruddin (Lany)</p>
               </div>
             </div>
           </div>
@@ -396,12 +394,12 @@
                 7930435257 - Alif Fikri Haykal Said
               </li>
               <li class="list-group-item">
-                <div class="fw-bold">BRI</div>
-                987654321 - Alif Fikri
+                <div class="fw-bold">BANK SULSELBAR</div>
+                5049 8622 5500 015427 - Alif Fikri Haykal Said
               </li>
               <li class="list-group-item">
-                <div class="fw-bold">Saweria</div>
-                <img src="img/saweria.png" alt="Saweria QR" class="img-thumbnail" width="150">
+                <div class="fw-bold">QR BCA</div>
+                <img src="img/qris.jpg" alt="QRIS BCA" class="img-thumbnail" width="150">
               </li>
             </ul>
           </div>
@@ -453,6 +451,7 @@
 
   <!--                                                        JavaScript Library                                                         -->
                     
+    <noscript>Aktifkan JavaScript Jika Belum Aktif</noscript>
     <!-- Link Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 
@@ -461,32 +460,62 @@
 
     <!-- Simply Countdown Config -->
     <script>
-        simplyCountdown('.simply-countdown', {
-            year: 2026, // required
-            month: 3, // required
-            day: 18, // required
-            hours: 10, // default is 0 [0-23] integer
-            // minutes: 30, // default is 0 [0-59] integer
-            // seconds: 30, // default is 0 [0-59] integer
-            words: { //words displayed into the countdown
-                days: { singular: 'hari', plural: 'hari' },
-                hours: { singular: 'jam', plural: 'jam' },
-                minutes: { singular: 'menit', plural: 'menit' },
-                seconds: { singular: 'detik', plural: 'detik' }
-                },
-            // plural: true,
-            // inline: false,
-            // inlineClass: 'simplycountdown-inline',
-            // enableUtc: false,
-            // onEnd: function () {
-                //your code
-                // return;
-            // },
-            // refresh: 1000,
-            // sectionClass: 'simply-section',
-            // amountClass: 'simply-amount',
-            // wordClass: 'simply-word',
-            // zeroPad: false,
+      simplyCountdown(".simply-countdown", {
+          // Target date (Required)
+          year: 2026, // Target year [YYYY]
+          month: 3, // Target month [1-12]
+          day: 18, // Target day [1-31]
+          hours: 12, // Target hours [0-23]
+          minutes: 0, // Target minutes [0-59]
+          seconds: 0, // Target seconds [0-59]
+
+          // Words customization
+          words: {
+              days: {
+                  // Function to handle pluralization
+                  lambda: (root, count) => (count > 1 ? root + "" : root),
+                  root: "hari", // Base word for days
+              },
+              hours: {
+                  lambda: (root, count) => (count > 1 ? root + "" : root),
+                  root: "jam",
+              },
+              minutes: {
+                  lambda: (root, count) => (count > 1 ? root + "" : root),
+                  root: "menit",
+              },
+              seconds: {
+                  lambda: (root, count) => (count > 1 ? root + "" : root),
+                  root: "detik",
+              },
+          },
+
+          // Display options
+          plural: true, // Enable/disable pluralization
+          // inline: false, // Display inline (true) or in blocks (false)
+          // inlineSeparator: ", ", // Separator for inline display
+          // enableUtc: false, // Use UTC time instead of local time
+
+          // Styling classes
+          inlineClass: "simply-countdown-inline", // Class for inline display
+          sectionClass: "simply-section", // Class for each time unit section
+          amountClass: "simply-amount", // Class for number display
+          wordClass: "simply-word", // Class for word display
+
+          // Formatting options
+          // zeroPad: false, // Add leading zeros to numbers (e.g., 05 instead of 5)
+          // countUp: false, // Count up from target date instead of down to it
+          // removeZeroUnits: false, // Hide time units when they reach zero
+          // refresh: 1000, // Update interval in milliseconds (1 second = 1000)
+
+          // Event handlers
+          // onEnd: () => {
+              // Callback function when countdown ends
+              // console.log("Countdown finished!");
+          // },
+          // onStop: () => {}, // Callback when countdown is stopped
+          // onResume: () => {}, // Callback when countdown is resumed
+          // onUpdate: (params) => {}, // Callback when countdown is updated
         });
     </script>
 
